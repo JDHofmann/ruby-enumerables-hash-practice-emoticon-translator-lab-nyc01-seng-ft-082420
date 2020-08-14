@@ -24,8 +24,9 @@ def get_english_meaning(path, emoticon)
         if emoticon_value == emoticon 
           return key
         end 
-        return "Sorry, that emoticon was not found"
     end 
+  return "Sorry, that emoticon was not found"
+
   end
 end
 
