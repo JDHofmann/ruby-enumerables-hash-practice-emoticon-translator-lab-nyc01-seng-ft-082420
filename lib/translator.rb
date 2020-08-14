@@ -18,7 +18,7 @@ new_hash
 end
 
 def get_japanese_emoticon(emoticons, emo)
-  emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
+  emoticons = load_library("lib/emoticons.yml")
   emoticons.each do |key, value|
     if emoticons[key][emo]
       emoticons[key][1]
