@@ -6,9 +6,10 @@ emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
 puts emoticons
 
 def load_library(emoticons)
+  new_hash = {}
   # evens = (1..10).each_with_object([]) { |i, a| a << i*2 }
-  new_hash = emoticons.each_with_object ([]) {|key, value| temp_hash}
-  emoticons[key]
+  emoticons.each_ do |key, value|
+  new_hash.push(emoticons[key])
   binding.pry 
 end 
 end
