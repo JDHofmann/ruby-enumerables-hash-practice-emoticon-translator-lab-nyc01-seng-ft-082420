@@ -22,6 +22,8 @@ def get_japanese_emoticon(emoticons, emo)
   emoticons.each do |key, value|
     if emoticons[key][:english] == emo
       emoticons[key][:japanese]
+    else 
+      puts "Sorry, that emoticon was not found"
     end 
   # binding.pry
   end
