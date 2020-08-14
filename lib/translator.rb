@@ -4,7 +4,8 @@ require 'pry'
 
 # emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
 
-def load_library(emoticons)
+def load_library(lib/emoticons.yml)
+  emoticons = lib/emoticons.yml
   new_hash = {}
   emoticons.each do |key, value|
   new_hash[key] = {:english => value[0], :japanese => value[1]}
