@@ -36,10 +36,10 @@ def get_english_meaning(filepath, emo)
   emoticons.each do |key, value|
     value.each do |lang, emoticon_value|
       if emoticon_value == emo 
-        retrun 
+        retrun emoticons[key][:japanese]
       end 
     end 
   end
-binding.pry
+# binding.pry
 end
 # binding.pry
