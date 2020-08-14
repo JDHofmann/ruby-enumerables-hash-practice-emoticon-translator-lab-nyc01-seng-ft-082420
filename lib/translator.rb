@@ -10,9 +10,10 @@ def load_library(emoticons)
   # evens = (1..10).each_with_object([]) { |i, a| a << i*2 }
   emoticons.each do |key, value|
   new_hash[key] = {}
+  new_hash[key]
   # binding.pry 
 end 
-binding.pry
+# binding.pry
 end
 
 def get_japanese_emoticon
