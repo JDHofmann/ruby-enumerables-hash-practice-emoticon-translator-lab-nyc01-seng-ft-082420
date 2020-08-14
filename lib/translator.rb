@@ -23,7 +23,7 @@ def get_japanese_emoticon(emoticons, emo)
     if emoticons[key][:english] == emo
       emoticons[key][:japanese]
     end 
-  # binding.pry
+  binding.pry
   end
     # if emoticons
 end
