@@ -7,7 +7,7 @@ puts emoticons
 
 def load_library
   emoticons.each do |key, value|
-  puts key
+  puts emoticons[key]
   binding.pry 
 end 
 end
