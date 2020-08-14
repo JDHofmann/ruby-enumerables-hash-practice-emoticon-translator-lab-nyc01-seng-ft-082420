@@ -15,6 +15,18 @@ def load_library(emoticons)
 new_hash
 end
 
+def get_english_meaning(filepath, emo)
+  
+  emoticons = load_library(filepath)
+  emoticons.each do |key, value|
+    value.each do |lang, emoticon_value|
+      if emoticon_value == emo 
+        retrun emoticons[key]
+      end 
+    end 
+  end
+end
+
 def get_japanese_emoticon(filepath, emo)
   emoticons = load_library(filepath)
   
@@ -31,16 +43,4 @@ def get_japanese_emoticon(filepath, emo)
   # # binding.pry 
 end
 
-def get_english_meaning(filepath, emo)
-  
-  emoticons = load_library(filepath)
-  emoticons.each do |key, value|
-    value.each do |lang, emoticon_value|
-      if emoticon_value == emo 
-        retrun emoticons[key]
-      end 
-    end 
-  end
-# binding.pry
-end
-# binding.pry
+
