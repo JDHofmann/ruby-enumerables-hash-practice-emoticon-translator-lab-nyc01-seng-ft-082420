@@ -6,7 +6,10 @@ emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
 puts emoticons
 
 def load_library
-  emoticons.each_
+  emoticons.each_with_object({}) { |key, value| new_hash}
+  key
+  binding.pry 
+end 
 end
 
 def get_japanese_emoticon
