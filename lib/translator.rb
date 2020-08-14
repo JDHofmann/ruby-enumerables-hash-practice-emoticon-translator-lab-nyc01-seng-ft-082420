@@ -37,7 +37,7 @@ def get_japanese_emoticon(filepath, emo)
       puts "yes"
       # result = emoticons[key][:japanese]
     else 
-      puts "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end 
   #binding.pry
   end
