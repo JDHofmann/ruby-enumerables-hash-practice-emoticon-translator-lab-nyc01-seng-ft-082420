@@ -16,11 +16,15 @@ def load_library(emoticons)
 new_hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(emoticons, emo)
+    emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
+    binding.pry
+    if emoticons
 end
 
 def get_english_meaning
+    emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
+
   # code goes here
 end
 # binding.pry
