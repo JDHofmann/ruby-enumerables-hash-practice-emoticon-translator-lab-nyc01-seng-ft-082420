@@ -20,13 +20,14 @@ def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons.each do |key, value|
     value.each do |lang, emoticon_value|
+      lang.each do | |
       binding.pry
-      if emoticon_value == emoticon 
-        return emoticons[key]
-        binding.pry
-      else return "Sorry, that emoticon was not found"
-        binding.pry
-      end 
+        if emoticon_value == emoticon 
+          return emoticons[key]
+          binding.pry
+        else return "Sorry, that emoticon was not found"
+          binding.pry
+        end 
     end 
   end
 end
