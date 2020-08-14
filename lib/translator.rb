@@ -20,8 +20,9 @@ def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons.each do |key, value|
     value.each do |lang, emoticon_value|
-      if emoticon_value == emo 
+      if emoticon_value == emoticon 
         retrun emoticons[key]
+        
       else return "Sorry, that emoticon was not found"
       end 
     end 
