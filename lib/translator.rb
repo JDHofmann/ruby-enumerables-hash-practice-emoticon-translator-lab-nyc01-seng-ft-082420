@@ -1,5 +1,7 @@
 # require modules here
+require "yaml"
 
+YAML.load_file('fruits.yml')
 
 def load_library
   # code goes here
