@@ -1,7 +1,8 @@
 # require modules here
 require "yaml"
 require 'pry'
-emoticons= YAML.load_file('emoticons.yml')
+# emoticons= YAML.load_file('emoticons.yml')
+emoticons = YAML::load( File.open( 'emoticons.yml' ) )
 
 puts emoticons
 
