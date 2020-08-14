@@ -1,9 +1,8 @@
 # require modules here
 require "yaml"
 require 'pry'
-# emoticons= YAML.load_file('emoticons.yml')
+
 emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
-# puts emoticons
 
 def load_library(emoticons)
   new_hash = {}
@@ -11,7 +10,7 @@ def load_library(emoticons)
   new_hash[key] = {"English"=> value[0], "Japanese" => value[1]}
   # binding.pry 
   end 
-# binding.pry
+binding.pry
 new_hash
 end
 
