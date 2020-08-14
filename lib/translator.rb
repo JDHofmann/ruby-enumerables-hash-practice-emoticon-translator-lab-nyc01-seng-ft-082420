@@ -9,7 +9,8 @@ def load_library(emoticons)
   new_hash = {}
   # evens = (1..10).each_with_object([]) { |i, a| a << i*2 }
   emoticons.each do |key, value|
-  puts key
+  new_hash[key] = { "English" => #{value[0]},
+                    "Japanese" => #{value[1]}}
   binding.pry 
 end 
 end
