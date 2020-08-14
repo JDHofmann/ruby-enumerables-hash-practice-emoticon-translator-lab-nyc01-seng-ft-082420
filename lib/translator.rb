@@ -15,7 +15,7 @@ def load_library(emoticons)
 new_hash
 end
 
-def get_english_meaning(filepath, emo)
+def get_english_meaning(filepath, emoticon)
   
   emoticons = load_library(filepath)
   emoticons.each do |key, value|
