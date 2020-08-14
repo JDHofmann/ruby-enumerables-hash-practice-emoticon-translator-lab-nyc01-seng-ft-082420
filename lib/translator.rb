@@ -5,7 +5,7 @@ require 'pry'
 emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
 puts emoticons
 
-def load_library
+def load_library(emoticons)
   emoticons.each do |key, value|
   puts emoticons[key]
   binding.pry 
