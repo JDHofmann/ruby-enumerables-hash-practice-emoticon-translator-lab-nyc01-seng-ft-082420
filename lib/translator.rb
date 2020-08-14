@@ -32,7 +32,7 @@ def get_japanese_emoticon(emoticons, emo)
 end
 
 def get_english_meaning(filePath, emo)
-    emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
+  emoticons = load_library("lib/emoticons.yml")
 
   # code goes here
 end
