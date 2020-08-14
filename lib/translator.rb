@@ -17,8 +17,8 @@ def load_library(emoticons)
 new_hash
 end
 
-def get_japanese_emoticon(emoticons, emo)
-  emoticons = load_library("lib/emoticons.yml")
+def get_japanese_emoticon(filepath, emo)
+  emoticons = load_library(filepath)
   result = ''
   emoticons.each do |key, value|
     if emoticons[key][:english] == emo
@@ -31,8 +31,8 @@ def get_japanese_emoticon(emoticons, emo)
   # binding.pry 
 end
 
-def get_english_meaning(filePath, emo)
-  emoticons = load_library("lib/emoticons.yml")
+def get_english_meaning(filepath, emo)
+  emoticons = load_library(filepath)
 
   # code goes here
 end
