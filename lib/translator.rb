@@ -22,6 +22,7 @@ def get_english_meaning(filepath, emoticon)
     value.each do |lang, emoticon_value|
       if emoticon_value == emo 
         retrun emoticons[key]
+      else return 
       end 
     end 
   end
