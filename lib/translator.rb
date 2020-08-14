@@ -19,14 +19,14 @@ end
 
 def get_japanese_emoticon(emoticons, emo)
   emoticons = load_library("lib/emoticons.yml")
-  # emoticons.each do |key, value|
-    emoticons.find    { |key, value|
+  result = ''
+  emoticons.each do |key, value|
     if emoticons[key][:english] == emo
-      emoticons[key][:japanese]}
+      result = emoticons[key][:japanese]
     else 
       puts "Sorry, that emoticon was not found"
     end 
-  binding.pry
+  #binding.pry
   end
   # binding.pry 
 end
