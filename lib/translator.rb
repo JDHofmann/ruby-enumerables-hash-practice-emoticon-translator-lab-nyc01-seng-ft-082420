@@ -27,8 +27,9 @@ def get_japanese_emoticon(emoticons, emo)
     end 
   # binding.pry
   end
-  result
+  
   binding.pry 
+  result
 end
 
 def get_english_meaning
