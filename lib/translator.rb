@@ -34,9 +34,10 @@ end
 def get_english_meaning(filepath, emo)
   emoticons = load_library(filepath)
   emoticons.each do |key, value|
-    binding.pry
+    result = value.each_with_object([]) { |lang, emoticon_value| a}
+      binding.pry
+    end 
   end
-  result = (1..10).each_with_object([]) { |i, a| a << i*2 }
 binding.pry
 end
 # binding.pry
