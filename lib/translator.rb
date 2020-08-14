@@ -25,10 +25,8 @@ def get_english_meaning(path, emoticon)
           return key
         end 
     end 
-
   end
-              return "Sorry, that emoticon was not found"
-
+return "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon(filepath, emo)
@@ -39,12 +37,12 @@ def get_japanese_emoticon(filepath, emo)
     if emoticons[key][:english] == emo
       puts "yes"
       # result = emoticons[key][:japanese]
-    else 
-      return "Sorry, that emoticon was not found"
     end 
   #binding.pry
   end
   # binding.pry 
+return "Sorry, that emoticon was not found"
+
 end
 
 
