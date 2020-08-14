@@ -11,7 +11,7 @@ def load_library(emoticons)
   emoticons.each do |key, value|
   puts new_hash[key] = {}
   
-  # binding.pry 
+  binding.pry 
 end 
 # binding.pry
 end
