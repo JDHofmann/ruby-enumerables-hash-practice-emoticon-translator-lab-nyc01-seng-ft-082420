@@ -11,9 +11,7 @@ def load_library(emoticons)
   
   emoticons.each do |key, value|
   new_hash[key] = {:english => value[0], :japanese => value[1]}
-# binding.pry 
   end 
-# binding.pry
 new_hash
 end
 
@@ -22,7 +20,8 @@ def get_japanese_emoticon(filepath, emo)
   result = ''
   emoticons.each do |key, value|
     if emoticons[key][:english] == emo
-      result = emoticons[key][:japanese]
+      puts "yes"
+      # result = emoticons[key][:japanese]
     else 
       puts "Sorry, that emoticon was not found"
     end 
