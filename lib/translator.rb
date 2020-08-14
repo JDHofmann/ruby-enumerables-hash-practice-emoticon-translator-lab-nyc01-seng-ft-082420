@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(emoticons, emo)
   emoticons = load_library("lib/emoticons.yml")
   emoticons.each do |key, value|
-    if emoticons[key][emo]
+    if emoticons[key][:english] == emo
       emoticons[key][1]
     end 
   binding.pry
