@@ -32,11 +32,12 @@ def get_japanese_emoticon(filepath, emo)
 end
 
 def get_english_meaning(filepath, emo)
+  
   emoticons = load_library(filepath)
   emoticons.each do |key, value|
     value.each do |lang, emoticon_value|
       if emoticon_value == emo 
-        retrun emoticons[key][:japanese]
+        retrun emoticons[key]
       end 
     end 
   end
