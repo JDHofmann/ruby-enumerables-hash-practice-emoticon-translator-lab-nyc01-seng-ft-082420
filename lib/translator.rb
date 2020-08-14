@@ -1,7 +1,9 @@
 # require modules here
 require "yaml"
+require 'pry'
+YAML.load_file('emoticons.yml')
 
-YAML.load_file('fruits.yml')
+puts emoticons
 
 def load_library
   # code goes here
@@ -14,3 +16,4 @@ end
 def get_english_meaning
   # code goes here
 end
+binding.pry
