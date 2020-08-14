@@ -25,10 +25,10 @@ def get_japanese_emoticon(emoticons, emo)
     else 
       puts "Sorry, that emoticon was not found"
     end 
-  # binding.pry
+  binding.pry
   end
   
-  binding.pry 
+  # binding.pry 
   result
 end
 
