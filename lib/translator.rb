@@ -21,9 +21,9 @@ def get_japanese_emoticon(emoticons, emo)
   emoticons = load_library("lib/emoticons.yml")
   emoticons.each do |key, value|
     if emoticons[key][:english] == emo
-      emoticons[key][1]
+      emoticons[key][:japanese]
     end 
-  binding.pry
+  # binding.pry
   end
     # if emoticons
 end
