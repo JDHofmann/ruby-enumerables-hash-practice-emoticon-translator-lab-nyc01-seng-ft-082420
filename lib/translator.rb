@@ -31,17 +31,17 @@ end
 def get_japanese_emoticon(filepath, emo)
   emoticons = load_library(filepath)
   
-  # result = ''
-  # emoticons.each do |key, value|
-  #   if emoticons[key][:english] == emo
-  #     puts "yes"
-  #     # result = emoticons[key][:japanese]
-  #   else 
-  #     puts "Sorry, that emoticon was not found"
-  #   end 
-  # #binding.pry
-  # end
-  # # binding.pry 
+  result = ''
+  emoticons.each do |key, value|
+    if emoticons[key][:english] == emo
+      puts "yes"
+      # result = emoticons[key][:japanese]
+    else 
+      puts "Sorry, that emoticon was not found"
+    end 
+  #binding.pry
+  end
+  # binding.pry 
 end
 
 
