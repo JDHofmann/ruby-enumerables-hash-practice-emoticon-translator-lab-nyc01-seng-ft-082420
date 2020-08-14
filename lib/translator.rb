@@ -22,7 +22,7 @@ def get_english_meaning(path, emoticon)
     value.each do |lang, emoticon_value|
       if emoticon_value == emoticon 
         return emoticons[key]
-        
+        binding.pry
       else return "Sorry, that emoticon was not found"
         binding.pry
       end 
