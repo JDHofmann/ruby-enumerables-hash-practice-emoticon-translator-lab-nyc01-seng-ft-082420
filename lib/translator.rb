@@ -15,9 +15,9 @@ def load_library(emoticons)
 new_hash
 end
 
-def get_english_meaning(filepath, emoticon)
+def get_english_meaning(path, emoticon)
   
-  emoticons = load_library(filepath)
+  emoticons = load_library(path)
   emoticons.each do |key, value|
     value.each do |lang, emoticon_value|
       if emoticon_value == emo 
