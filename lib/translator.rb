@@ -6,8 +6,8 @@ emoticons = YAML.load( File.read( 'lib/emoticons.yml' ) )
 puts emoticons
 
 def load_library
-  emoticons.each_with_object({}) { |key, value| new_hash}
-  key
+  emoticons.each_with_object({}) { |key, value|new_hash}
+  puts key
   binding.pry 
 end 
 end
